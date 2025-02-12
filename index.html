@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Music Icon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Musify</div>
+        <div class="music-icon">
+            <i class="fas fa-music"></i>
+        </div>
+    </nav>
+
+    <div class="slider-container">
+        <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <div class="playlist-slider">
+            <div class="playlist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1AAIS0QGX6Yd3_9yr3GPLRKhw4QMELFNig&s" alt="Playlist 1">
+                <p>Social Media Hits</p>
+            </div>
+            <div class="playlist">
+                <img src="https://i1.sndcdn.com/artworks-000484686441-jvss85-t500x500.jpg" alt="Playlist 2">
+                <p>Holi Special</p>
+            </div>
+            <div class="playlist">
+                <img src="https://c.saavncdn.com/125/Cocktail-Hindi-2012-20230430081731-500x500.jpg" alt="Playlist 3">
+                <p>Dance Party</p>
+            </div>
+            <div class="playlist">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/a82d8966ee39e342d5c12aa8062b349329a77781839d0551552c72464008ffb1.jpg" alt="Playlist 4">
+                <p>90s Hits</p>
+            </div>
+            <div class="playlist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM0WiUx-sXfzmVvn0a-eIcCNh5Dq-q0ijaA&s" alt="Playlist 5">
+                <p>Love Songs</p>
+            </div>
+            <div class="playlist">
+                <img src="https://i.ytimg.com/vi/Y-uMPL5qcKE/maxresdefault.jpg" alt="Playlist 6">
+                <p>Item Songs</p>
+            </div>
+        </div>
+        <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="music-player">
+        <div class="controls">
+            <i class="fas fa-random active"></i> <!-- Shuffle -->
+            <i class="fas fa-backward"></i> <!-- Previous -->
+            <i class="fas fa-play play-button"></i> <!-- Play -->
+            <i class="fas fa-forward"></i> <!-- Next -->
+            <i class="fas fa-exchange-alt"></i> <!-- Repeat -->
+        </div>
+        <div class="progress-container">
+            <span class="current-time">0:00</span>
+            <input type="range" min="0" max="100" value="0" class="progress-bar">
+            <span class="total-time">0:00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
