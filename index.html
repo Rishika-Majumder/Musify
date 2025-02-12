@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <title>Navbar with Music Icon</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -10,17 +16,16 @@
 <body>
     <nav class="navbar">
         <div class="logo">Musify</div>
-        <div class="music-icon">
-            <i class="fas fa-music"></i>
-        </div>
     </nav>
 
+    <div class="heading">Recent Favourites</div>
     <div class="slider-container">
-        <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
         <div class="playlist-slider">
             <div class="playlist">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1AAIS0QGX6Yd3_9yr3GPLRKhw4QMELFNig&s" alt="Playlist 1">
-                <p>Social Media Hits</p>
+                <a href="social-media-hits.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1AAIS0QGX6Yd3_9yr3GPLRKhw4QMELFNig&s" alt="Playlist 1">
+                    <p>Social Media Hits</p>
+                </a>
             </div>
             <div class="playlist">
                 <img src="https://i1.sndcdn.com/artworks-000484686441-jvss85-t500x500.jpg" alt="Playlist 2">
@@ -42,22 +47,44 @@
                 <img src="https://i.ytimg.com/vi/Y-uMPL5qcKE/maxresdefault.jpg" alt="Playlist 6">
                 <p>Item Songs</p>
             </div>
+            <div class="playlist">
+                <img src="https://c.saavncdn.com/532/Saawariya-Hindi-2007-20190629124055-500x500.jpg" alt="Playlist 7">
+                <p>2000s Hits</p>
+            </div>
         </div>
-        <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
     </div>
 
-    <div class="music-player">
-        <div class="controls">
-            <i class="fas fa-random active"></i> <!-- Shuffle -->
-            <i class="fas fa-backward"></i> <!-- Previous -->
-            <i class="fas fa-play play-button"></i> <!-- Play -->
-            <i class="fas fa-forward"></i> <!-- Next -->
-            <i class="fas fa-exchange-alt"></i> <!-- Repeat -->
-        </div>
-        <div class="progress-container">
-            <span class="current-time">0:00</span>
-            <input type="range" min="0" max="100" value="0" class="progress-bar">
-            <span class="total-time">0:00</span>
+    <div class="heading">Artist Specials</div>
+    <div class="slider-container">
+        <div class="playlist-slider">
+            <div class="playlist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIptG_wHtGL1bCzjKhOKyX8IRsjj0AaYlig&s" alt="Playlist 1">
+                <p>Arijit Singh</p>
+            </div>
+            <div class="playlist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMeXrQzT9Wv3_Cwr-AOxQJDK59geaaZqsRg&s" alt="Playlist 2">
+                <p>Shreya Ghoshal</p>
+            </div>
+            <div class="playlist">
+                <img src="https://garhwalpost.in/wp-content/uploads/2021/04/A.R.-Rahman.jpg" alt="Playlist 3">
+                <p>A. R. Rahmam</p>
+            </div>
+            <div class="playlist">
+                <img src="https://i0.wp.com/www.kavitachhibber.com/wp-content/uploads/2018/03/Hariharan.jpg?fit=570%2C400&ssl=1" alt="Playlist 4">
+                <p>Hariharan</p>
+            </div>
+            <div class="playlist">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ashaji.jpg/640px-Ashaji.jpg" alt="Playlist 5">
+                <p>Asha Bhosle</p>
+            </div>
+            <div class="playlist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThu-JybSa3ceBYlCZJOz8x5kI-Y8nLO5-rTA&s" alt="Playlist 6">
+                <p>Atif Aslam</p>
+            </div>
+            <div class="playlist">
+                <img src="https://static.toiimg.com/thumb/msid-89386079,imgsize-36578,width-900,height-1200,resizemode-6/89386079.jpg" alt="Playlist 7">
+                <p>Lata Mangeshkar</p>
+            </div>
         </div>
     </div>
 
